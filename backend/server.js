@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Atlas connection string
-const uri = process.env.MONGODB_URI || "your-local-fallback"; // safer than hardcoding
+const uri = process.env.MONGODB_URI; // safer than hardcoding
 const client = new MongoClient(uri);
 
 async function run() {
