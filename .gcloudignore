@@ -1,0 +1,20 @@
+# Ignore node_modules everywhere
+**/node_modules
+
+# Ignore build artifacts (we'll build in Docker)
+frontend/build
+
+# Logs
+*.log
+
+# OS + IDE files
+.git
+.gitignore
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# Misc
+npm-debug.log*
+yarn-error.log*
